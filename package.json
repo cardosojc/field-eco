@@ -32,5 +32,10 @@
     "prettier": "2.0.5",
     "pretty-quick": "^2.0.1"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged --pattern '**/*.json' --pattern '**/*.md' --pattern '**/*.yml' --pattern '**/*.js'"
+    }
+  },
   "private": true
 }
